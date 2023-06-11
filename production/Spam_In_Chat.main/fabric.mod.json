@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "spaminthechat",
+	"id": "spam-in-chat",
 	"version": "${version}",
-	"name": "spaminthechat",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Spam in chat",
+	"description": "Adds spam, the food.",
 	"authors": [
-		"Me!"
+		"emireri1498"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/spaminthechat/icon.png",
+	"icon": "assets/spam-in-chat/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"spam.spam.ExampleMod"
+			"spam.in.chat.ExampleMod"
 		],
 		"client": [
-			"spam.spam.ExampleModClient"
+			"spam.in.chat.ExampleModClient"
 		]
 	},
 	"mixins": [
-		"spaminthechat.mixins.json",
+		"spam-in-chat.mixins.json",
 		{
-			"config": "spaminthechat.client.mixins.json",
+			"config": "spam-in-chat.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -36,6 +36,5 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
 	}
 }
